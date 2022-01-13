@@ -1,0 +1,20 @@
+<html>
+    <head>
+    <style>
+        /* descendant selector matches all elements that are descendants of a specified element */
+        div p {
+            background-color: yellow; /* selects all <p> elements inside <div> elements */
+        }
+    </style>
+    </head>
+
+    <div>
+        <p> Paragraph 1 in the div </p>
+        <p> Paragraph 2 in the div </p>
+        <section>
+            <p> Paragraph 3 in the div </p>
+        </section>
+    </div>
+    <p> Paragraph 4 not in the div</p>
+    <p> Paragraph 5 not in the div</p>
+</html>

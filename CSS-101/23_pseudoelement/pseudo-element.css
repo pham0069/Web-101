@@ -1,0 +1,46 @@
+/*
+Pseudo-element points to special parts of an element
+The syntax is
+selector::pseudo-element {
+    property: value;
+}
+*/
+
+/* Select first-letter of a <p> element */
+p::first-letter{
+    color: #ff0000;
+    font-size: xx-large;
+}
+/* Select first-letter in a <p> element whose class is 'intro' */
+p.intro::first-letter {
+    color: #ff0000;
+    font-size: 200%;
+}
+
+/* Select first line of a <p> element */
+p::first-line {
+    color: #0000ff;
+    font-variant: small-caps;
+}
+
+/* 
+Used to insert some content b4 the content of an element
+*/
+h1::before {
+    content: url(smiley.gif);
+}
+
+/* 
+Used to insert some content after the content of an element
+*/
+h1::after {
+    content: url(smiley.gif);
+}
+
+/*
+Matches the portion of an element that is selected by a user
+*/
+::selection {
+    color: red;
+    background: yellow;
+  }

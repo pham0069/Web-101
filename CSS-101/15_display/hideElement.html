@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* The element will be hidden, and the page will be displayed as if the element is not there */
+        h1.hidden {
+            display: none;
+        }
+
+        /* visibility:hidden; also hides an element. However, the element will still take up the same space as before. 
+        The element will be hidden, but still affect the layout */
+        h1.hiddenVisibility {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>This is a visible heading</h1>
+    <h1 class="hidden">This is a hidden heading</h1>
+    <p>Notice that the h1 element with display: none; does not take up any space.</p>
+    <h1 class="hiddenVisibility">This is a hidden-visibility heading</h1>
+    <p>Notice that the h1 element with visibility: hidden; is also hidden but does take up some space, creating a gap btw this paragraph and the last one.</p>
+
+</body>
+
+</html>

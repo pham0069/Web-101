@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <style>
+            /* Matches any <p> element that is first child of any element */
+            p:first-child {
+                color: blue;
+            } 
+            /* Matches the first <i> element in all <p> elements */
+            p i:first-child {
+                color: red;
+            }
+            /* Matches all the <strong> elements of the <p> element 
+                that is the first child of another element */
+            p:first-child strong {
+                color: green;
+            } 
+        </style>
+    </head>
+    <body>
+        <p>This is some text. 
+            <strong> First-child </strong> of body element. 
+        </p>
+        <p>This is some text.
+            Not <strong> first-child </strong> of body element. 
+        </p>
+        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.
+            Only the first 'strong' is red
+        </p>
+        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.
+            Only the first 'strong' is red
+        </p>
+    </body>
+</html>

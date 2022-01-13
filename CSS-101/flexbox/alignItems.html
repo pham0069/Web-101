@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <style>
+            .flex-container {
+                display: flex;
+                height: 200px;
+                align-items: center;
+                background-color: DodgerBlue;
+            }
+
+            .flex-container > div {
+                background-color: #f1f1f1;
+                width: 100px;
+                margin: 10px;
+                text-align: center;
+                line-height: 75px;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Align-items Demo</h1>
+
+        <form>
+            <p>Please select a align mode</p>
+            <input type="radio" name="align" onclick="set('center')" checked="true">
+            Center: aligns the flex items in the middle of the container<br>
+            <input type="radio" name="align" onclick="set('flex-start')">
+            Flex-start: aligns the flex items at the top of the container<br>
+            <input type="radio" name="align" onclick="set('flex-end')">
+            Flex-end: aligns the flex items at the bottom of the container<br>
+            <input type="radio" name="align" onclick="set('stretch')">
+            Stretch: stretches the flex items to fill the container (this is default)<br>
+            <input type="radio" name="align" onclick="set('baseline')">
+            Baseline: aligns the flex items such as their baselines aligns. Baseline means the line for text.<br>
+        </form>
+
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+        </div>
+
+        <p>Look at this to highlight the baseline mode</p>
+        <div class="flex-container">
+            
+            <div><h1>1</h1></div>
+            <div><h6>2</h6></div>
+            <div><h3>3</h3></div>  
+            <div><small>4</small></div>  
+        </div>
+
+    </body>
+    <script>
+        function set(align) {
+            var flexContainer = document.getElementsByClassName("flex-container");
+            for (i = 0; i < flexContainer.length; i++) {
+                flexContainer[i].style.alignItems=align;
+            }
+            
+        }
+    </script>
+</html>

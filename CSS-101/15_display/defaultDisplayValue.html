@@ -1,0 +1,52 @@
+<!--
+The display property specifies if/how an element is displayed.
+
+3 display types: 
+    block:  always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+    inline: does not start on a new line and only takes up as much width as necessary
+    none: commonly used with JavaScript to hide and show elements without deleting and recreating them
+
+
+Each HTML element type has a default display type
+    block:
+        <div>
+        <h1> - <h6>
+        <p>
+        <form>
+        <header>
+        <footer>
+        <section>
+    
+    inline:
+        <span>
+        <a>
+        <img>
+
+    none:
+        <script> 
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /**/
+            div, h1, h2, p {
+                background-color: plum;
+            }
+            span {
+                background-color: salmon;
+            }
+        </style>
+    </head>
+    <body>
+        <p style="background-color:transparent;">Display block type</p>
+        <h1>Heading</h1>
+        <div>Division here</div>
+        <p>Say blahhhhhhhh</p>
+
+        <p style="background-color:transparent;">Display inline type</p>
+        <span> Mary Blair</span>
+        <span> Maurice Sendak</span>
+        <span> Carlis Elton</span>
+    </body>
+</html>

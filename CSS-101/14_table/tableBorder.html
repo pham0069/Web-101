@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* This adds border to each row and the table itself, creating a table with double border */
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        /* To remove double borders, set border-collapse */
+        table.singleBorder {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Add a border to a table:</h2>
+
+    <p> Double-border table </p>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+
+    <p> Single-border table</p>
+    <table class="singleBorder">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

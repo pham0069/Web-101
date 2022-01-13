@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+    Web safe fonts are fonts that are universally installed across all browsers and devices.
+    However, there are no 100% completely web safe fonts. 
+    There is always a chance that a font is not found or is not installed properly.
+    Therefore, it is very important to always use fallback fonts.
+
+    This means that you should add a list of similar "backup fonts" in the font-family property. 
+    If the first font does not work, the browser will try the next one, and the next one, and so on. 
+    Always end the list with a generic font family name.
+
+    The following list is best web safe for HTML and CSS
+        san-serif: 
+            Arial               most widely used, safest, available on major OS
+            Verdana             popular, readable even for small size
+            Helvetica           loved by designers, suitable for many business
+            Tahoma              less space btw characters
+            Trebuchet MS        not supported by all mobile OS
+        serif: 
+            Times New Roman     look professional, often used in news/magazines website
+            Georgia             elegant, redablee in small size, used for mobile
+            Garamond            classical for printed books, timeless look, good readability
+        monospace:
+            Courier New         often used with coding displays, movie screenplays
+        cursive: 
+            Brush Script MT     mimic handwriting, elegant, a bit hard to read
+-->
+<head>
+    <style>
+        /* in case Tahoma is not found, web browser will try Verdana, and so on */
+        p {
+            font-family: Tahoma, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Fallback Fonts</h1>
+
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+</body>
+
+</html>

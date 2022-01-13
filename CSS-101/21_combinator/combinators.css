@@ -1,0 +1,43 @@
+/*
+ *
+Combinator is something that explains the relationships between selectors
+CSS selector can contain more than 1 simple selector
+4 different combinators
+    descendant selector (space)
+    child selector (>)
+    adjacent sibling selector (+)
+    general sibling selector (~)
+*
+*/
+
+/* Descendant selector (space) 
+matches all elements that are descendants of a specified element
+Here selects all <p> elements inside <div> elements
+*/
+div p {
+    background-color: yellow;
+}
+
+/* Child selector (>)
+matches all elements that are children of a specified element
+descendants that are not direct children will be filtered
+*/
+div > p {
+    background-color: yellow;
+}
+
+/* Adjacent sibling selector (+)
+selects all elements that are adjacent siblings of a specified element
+sibling elements must have same parent element
+adjacent means 'immediately following'
+*/
+div + p {
+    background-color: yellow;
+}
+
+/* General sibling selector (~)
+selects all elements that are siblings of a specified elements
+*/
+div ~ p {
+    background-color: yellow;
+}

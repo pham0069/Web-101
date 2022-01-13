@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: black;
+            font-family: monospace;
+            color: green;
+        }
+
+        .pink-text {
+            color: pink;
+        }
+
+        /* this class will override the pink-text class (defined later, override the earlier)
+           no matter the classes order defined
+        */
+        .blue-text {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="pink-text">Pink</h1>
+    <h1 class="blue-text pink-text">Blue pink</h1>
+    <h1 class="pink-text blue-text">Pink blue</h1>
+
+</body>
+
+</html>

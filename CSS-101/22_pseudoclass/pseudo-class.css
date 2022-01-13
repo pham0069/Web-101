@@ -1,0 +1,53 @@
+/**
+Pseudo-class defines a special state of an element
+Syntax is
+selector:pseudo-class {
+    property: value;
+}   
+*/
+
+/**
+Pseudo-classes can be combined with CSS classes
+*/
+a.highlight:hover {
+    color: #ff0000;
+}
+
+/* Hover on <div>
+*/
+div:hover{
+    background-color:blue;
+}
+
+/*
+a:active        select active link
+input:checked   select every checked <input> element
+input:disabled
+p: empty        select paragraph with no children
+input:enabled
+p:first-child
+p:first-of-type select the first <p> element in its parent
+input:focus     
+a:hover
+input:in-range  select <input> element with a value within specified range
+input:invalid
+p:lang(it)      select all <p> with a language attribute value starting with 'it'
+p:last-child 
+p:last-of-type
+a:link
+:not(p)
+p:nth-child(2)  select all <p> that is the second child of its parent
+p:nth-last-child(2)
+p:nth-of-type(2)
+p:only-of-type
+p:only-child
+input:optional
+input:out-of-range
+input:read-only
+input:read-write
+input:required
+root
+#news:target
+input:valid
+a:visited
+*/

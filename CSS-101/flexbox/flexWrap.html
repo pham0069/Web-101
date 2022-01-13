@@ -1,0 +1,60 @@
+<!-- flex-flow is shorthand for flex-wrap and flex-direction
+    e.g. flex-flow: row nowrap -->
+<html>
+    <head>
+        <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: DodgerBlue;
+        }
+
+        .flex-container > div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Flex-wrap Demo</h1>
+
+        <form>
+            <p>Please select a flex wrap mode</p>
+            <input type="radio" id="wrap" name="wrap" value="wrap" onclick="setWrap('wrap')">
+            Wrap: specifies that the flex items will wrap if necessary<br>
+            <input type="radio" id="nowrap" name="wrap" value="nowrap" onclick="setWrap('nowrap')">
+            Nowrap: specifies that the flex items will not wrap (this is default)<br>
+            <input type="radio" id="wrap-reverse" name="wrap" value="wrap-reverse" onclick="setWrap('wrap-reverse')">
+            Wrap-reverse: specifies that the flexible items will wrap if necessary, in reverse order<br>
+        </form>
+
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>  
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>  
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>  
+        </div>
+
+        <p>Try resizing the browser window.</p>
+
+    </body>
+
+    <script>
+        function setWrap(wrap) {
+            var flexContainer = document.getElementsByClassName("flex-container")[0];
+            flexContainer.style.flexWrap=wrap;
+        }
+    </script>
+</html>

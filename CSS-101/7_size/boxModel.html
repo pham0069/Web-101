@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+Box model is essentially a box that wraps around every HTML element. 
+It consists of: margins, borders, padding, and the actual content.
+
+    Content - The content of the box, where text and images appear
+    Padding - Clears an area around the content. The padding is transparent
+    Border - A border that goes around the padding and content
+    Margin - Clears an area outside the border. The margin is transparent
+    
+The box model allows us to add a border around elements, and to define space between elements. 
+
+The element size is calculated as below:
+    Total element width = width + left padding + right padding + left border + right border + left margin + right margin
+    Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+-->
+<head>
+    <style>
+        div {
+            width: 320px;
+            padding: 10px;
+            border: 5px solid gray;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Calculate the total width:</h2>
+
+    <img src="klematis4_big.jpg" width="350" height="263" alt="Klematis">
+    <div>The picture above is 350px wide. The total width of this element is also 350px.</div>
+
+</body>
+
+</html>

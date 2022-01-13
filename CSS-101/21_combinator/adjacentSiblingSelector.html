@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <style>
+            /* adjacent sibling selector selects an element that is directly after another specific element 
+            sibling elements must have the same parent element, and "adjacent" means "immediately following"
+            */
+            div + p {
+                background-color: yellow; /* selects the first <p> element that are placed immediately after <div> elements */
+            }
+        </style>
+    </head>
+<body>
+
+<div>
+    <p>Paragraph 1 in the div.</p>
+    <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. Not in a div. Adjacent sibling to the previous div</p>
+<p>Paragraph 4. Not in a div.</p>
+
+</body>
+</html>

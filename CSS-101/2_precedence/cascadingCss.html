@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <!--
+        A page style "cascade" into a new "virtual" style sheet by the following rules (1 is highest priority):
+            1. Inline style (inside an HTML element)
+            2. Iternal style sheets (in the head section)
+            3. External style sheets (in the head section)
+            4. Browser default
+        
+        - body background color is defined in inline style (lavender), internal (linen), external (lightblue)
+        inline takes effect -> background color = lavender
+
+        - h1 text color is defined in internal (purple), external (navy)
+        internal takes effect -> text color of heading = purple
+
+        - p text color is only defined in external (olive)
+        
+        - font family is defined nowhere -> default browser is Times New Roman 
+    -->
+    <head>
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        <style>
+            body {background-color: linen;}
+            h1 {color: purple;}
+        </style>
+    </head>
+    <body style="background-color: lavender">
+
+        <h1>Multiple Styles Will Cascade into One</h1>
+        <p>Here, the background color of the page is set with inline CSS, and also with an internal CSS, and also with an external CSS.</p>
+        <p>Try experimenting by removing styles to see how the cascading stylesheets work (try removing the inline CSS first, then the internal, then the external).</p>
+
+    </body>
+</html>

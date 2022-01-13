@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /*
+        border-width property specifies the width of the four borders.
+        the width can be set as a specific size (in px, pt, cm, em, etc) 
+        or by using one of the three pre-defined values: thin, medium, or thick
+        */
+        p.thick {
+            border-style: solid;
+            border-width: thick;
+        }
+        p.medium {
+            border-style: solid;
+            border-width: medium;
+        }
+        p.thin {
+            border-style: solid;
+            border-width: thin;
+        }
+        p.zero {
+            border-style: solid;
+            border-width: 5px;
+            /* all sides 5px */
+        }
+        p.one {
+            border-style: solid;
+            border-width: 5px 20px;
+            /* 5px top and bottom, 20px on the sides */
+        }
+
+        p.two {
+            border-style: solid;
+            border-width: 20px 5px;
+            /* 20px top and bottom, 5px on the sides */
+        }
+
+        p.three {
+            border-style: solid;
+            border-width: 25px 10px 4px;
+            /* 25px top, 10px right and left, 4px bottom */
+        }
+
+        p.four {
+            border-style: solid;
+            border-width: 25px 10px 4px 35px;
+            /* 25px top, 10px right, 4px bottom and 35px left */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>The border-width Property</h2>
+    <p>The border-width property can have from one to four values (for the top border, right border, bottom border, and
+        the left border):</p>
+
+    <p class="thick">Thick.</p>
+    <p class="medium">Medium.</p>
+    <p class="thin">Thin.</p>
+    <p class="zero">All sides same widthness.</p>
+    <p class="one">Opposite sides same widthness.</p>
+    <p class="two">Opposite sides same widthness.</p>
+    <p class="three">Left and right sides same widthness.</p>
+    <p class="four">Each side a widthnes.</p>
+
+</body>
+
+</html>

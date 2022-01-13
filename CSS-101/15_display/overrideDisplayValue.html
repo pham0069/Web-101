@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<!--
+    Setting the display property of an element only changes how the element is displayed, NOT what kind of element it is. 
+    So, an inline element with display: block; is not allowed to have other block elements inside it.
+-->
+<head>
+    <style>
+        span {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <span>A display property with a value of "block" results in</span> <span>a line break between the two
+        elements.</span>
+
+</body>
+
+</html>

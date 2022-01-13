@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <style>
+            /* general sibling selector selects all elements that are next siblings of a specified element */
+            div ~ p {
+                background-color: yellow; /* selects all <p> elements that are next siblings of <div> elements */
+            }
+        </style>
+    </head>
+<body>
+
+<div>
+    <p>Paragraph 1 in the div.</p>
+    <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. Not in a div. General sibling to the previous div.</p>
+<p>Paragraph 4. Not in a div. Also a sibling to the div.</p>
+
+</body>
+</html>

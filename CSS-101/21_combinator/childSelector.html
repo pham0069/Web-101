@@ -1,0 +1,20 @@
+<html>
+    <head>
+    <style>
+        /* child selector selects all elements that are the children of a specified element */
+        div > p {
+            background-color: yellow; /* selects all <p> elements that are children of a <div> element */
+        }
+    </style>
+    </head>
+
+    <div>
+        <p> Paragraph 1 in the div </p>
+        <p> Paragraph 2 in the div </p>
+        <section>
+            <p> Paragraph 3 in the div (descendant but not direct child of div) </p>
+        </section>
+    </div>
+    <p> Paragraph 4 not in the div</p>
+    <p> Paragraph 5 not in the div</p>
+</html>
